@@ -1,0 +1,537 @@
+        
+            
+            /*     explication    */
+
+    #entete-home {
+        display: flex;
+        flex-direction: column;
+        span {
+            width: 100%;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 0px 20px 0;
+            background-color: var(--gray);
+        }
+
+        span i {
+            margin-right: 40px;
+        }
+
+        #info {
+            background-color: var(--gray-600);
+            text-align: center;
+
+            .gras-entete {
+                font-weight: bold;
+                font-size: 40px;
+                margin: 20px 0 20px 0;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+
+
+    #explication {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        
+            h2 {
+            font-family: 'Shrikhand';
+            width: 100%;
+            font-size: 30px;
+            padding-left: 20px;
+            }
+        
+            .instruction {
+            width: 95%;
+            background-color: var(--gray);
+            border-radius: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            height: 100px;
+        
+                .number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 50px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: -15px;
+                height: 30px;
+                width: 30px;
+                color: white;
+                background-color: var(--violet);
+                border-radius: 50%;
+                font-size: 20px;
+                }
+            }
+
+            .instruction:hover {
+                background-color: rgb(245, 237, 255);
+                i {
+                    color: var(--violet);
+                }
+            }
+        
+            i {
+            font-size: 25px;
+            color: var(--gray-600);
+            margin-right: 60px;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+        
+            span {
+            margin-top: 25px;
+            font-size: 25px;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+        
+        
+        
+    }
+        
+                /*      restaurants    */ 
+        
+    #menus {
+    background-color: var(--gray);
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px repeat(4, 550px);
+                
+        h3{
+        font-family: 'Shrikhand';
+        font-size: 40px; 
+        padding-left: 20px;
+        padding-top: 80px;
+        }
+        
+        .menu {
+        background-color: white;
+        width: 94%;
+        margin: auto;
+        border-radius: 20px;
+        }
+        
+        .image-menu {
+        height: 350px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        
+            img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            object-fit: cover;
+            }
+        
+            span {
+            position: absolute;
+            color: #215749;
+            top: 30px;
+            right: 60px;
+            font-size: 30px;
+            padding: 10px;
+            background-color: #99E2D0;
+            }
+        }
+        
+        .explicatif-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        color: black;
+        
+            .texte {
+            width: 50%;
+                        
+                .gras {
+                padding: 20px 0px 0px 20px;
+                font-size: 25px;
+                font-weight: bold;
+                }
+        
+                p {
+                font-size: 25px;
+                padding: 20px 0px 20px 20px;
+                }
+            }
+        
+            .icone-explicatif {
+            width: 15%;
+        
+                i {
+                font-size: 35px;
+                margin-top: 30px;
+                }
+            }
+        }
+    }
+
+
+
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+
+    #entete-home {
+        display: flex;
+        flex-direction: column;
+        span {
+            width: 100%;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 0px 20px 0;
+            background-color: var(--gray);
+        }
+
+        span i {
+            margin-right: 40px;
+        }
+
+        #info {
+            background-color: var(--gray-600);
+            text-align: center;
+
+            h1 {
+                font-family: 'Shrikhand';
+                font-weight: bold;
+                font-size: 40px;
+                margin: 20px 0 20px 0;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+
+
+    #explication {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        
+            h2 {
+            text-align: center;
+            font-family: 'Shrikhand';
+            width: 100%;
+            font-size: 40px;
+            padding-top: 20px;
+            }
+        
+            .instruction {
+            width: 70%;
+            background-color: var(--gray);
+            border-radius: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            height: 100px;
+        
+                .number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 50px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: -15px;
+                height: 30px;
+                width: 30px;
+                background-color: var(--violet);
+                border-radius: 50%;
+                font-size: 20px;
+                }
+            }
+        
+            i {
+            font-size: 40px;
+            color: var(--gray-600);
+            margin-right: 60px;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+        
+            span {
+            margin-top: 25px;
+            font-size: 40px;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+        
+        
+        
+    }
+        
+                /*      restaurants    */ 
+        
+    #menus {
+    background-color: var(--gray);
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px repeat(4, 550px);
+                
+        h3{
+        font-family: 'Shrikhand';
+        text-align: center;
+        font-size: 40px; 
+        padding-left: 20px;
+        padding-top: 80px;
+        }
+        
+        .menu {
+        background-color: white;
+        width: 94%;
+        margin: auto;
+        border-radius: 20px;
+        }
+        
+        .image-menu {
+        height: 350px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        
+            img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            object-fit: cover;
+            }
+        
+            span {
+            position: absolute;
+            color: #215749;
+            top: 30px;
+            right: 60px;
+            font-size: 30px;
+            padding: 10px;
+            background-color: #99E2D0;
+            }
+        }
+        
+        .explicatif-menu {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+        color: black;
+        
+            .texte {
+            width: 50%;
+                        
+                .gras {
+                padding: 20px 0px 0px 20px;
+                font-size: 25px;
+                font-weight: bold;
+                }
+        
+                p {
+                font-size: 25px;
+                padding: 20px 0px 20px 20px;
+                }
+            }
+        
+            .icone-explicatif {
+            width: 10%;
+        
+                i {
+                font-size: 35px;
+                margin-top: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+            /*        desktop     */
+
+@media only screen and (min-width: 1281px) and (max-width: 1920px){
+
+    #entete-home {
+        display: flex;
+        flex-direction: column;
+        span {
+            width: 100%;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 0px 20px 0;
+            background-color: var(--gray);
+        }
+
+        span i {
+            margin-right: 40px;
+        }
+
+        #info {
+            background-color: var(--gray-600);
+            text-align: center;
+
+            .gras-entete {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 40px;
+                margin: 20px 0 20px 0;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+
+
+    #explication {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        width: 100%;
+        
+            h2 {
+            text-align: center;
+            font-family: 'Shrikhand';
+            width: 100%;
+            font-size: 40px;
+            padding: 20px 0px 20px 0px
+            }
+        
+            .instruction {
+            width: 50%;
+            background-color: var(--gray);
+            border-radius: 40px;
+            display: flex;
+            height: 100px;
+            margin: auto;
+        
+                .number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 50px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: -15px;
+                height: 30px;
+                width: 30px;
+                background-color: var(--violet);
+                border-radius: 50%;
+                font-size: 20px;
+                }
+            }
+        
+            i {
+            font-size: 40px;
+            color: var(--gray-600);
+            margin-left: 100px;
+            margin-right: 150px;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+        
+            span {
+            font-size: 40px;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+        
+        
+        
+    }
+        
+                /*      restaurants    */ 
+        
+    #menus {
+    gap: 1em;
+    background-color: var(--gray);
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: initial;
+    padding-bottom: 30px;
+                
+        h3{
+        grid-column: 1 / 3 ;
+        font-family: 'Shrikhand';
+        font-size: 40px; 
+        padding-left: 20px;
+        padding-top: 80px;
+        }
+        
+        .menu {
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 15px;
+        }
+        
+        .image-menu {
+        height: 350px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        
+            img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            object-fit: cover;
+            }
+        
+            span {
+            position: absolute;
+            color: #215749;
+            top: 30px;
+            right: 60px;
+            font-size: 30px;
+            padding: 10px;
+            background-color: #99E2D0;
+            }
+        }
+        
+        .explicatif-menu {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+        color: black;
+        
+            .texte {
+            width: 50%;
+                        
+                .gras {
+                padding: 20px 0px 0px 20px;
+                font-size: 25px;
+                font-weight: bold;
+                }
+        
+                p {
+                font-size: 25px;
+                padding: 20px 0px 20px 20px;
+                }
+            }
+        
+            .icone-explicatif {
+            width: 10%;
+        
+                i {
+                font-size: 35px;
+                margin-top: 30px;
+                }
+            }
+        }
+    }
+}

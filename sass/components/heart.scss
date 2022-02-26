@@ -1,0 +1,26 @@
+.icone-explicatif {
+    font-size: xx-large;
+    position: relative;
+    cursor: pointer;
+    i {
+      transition: all 350ms;
+      &:nth-child(2) {
+        color: transparent;
+        padding: 0px;
+      }
+    }
+    &:hover {
+      i {
+        &:nth-child(1) {
+          transform: scale(0.8);
+        }
+        &:nth-child(2) {
+          transform: scale(1);
+          background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+        }
+      }
+    }
+  }

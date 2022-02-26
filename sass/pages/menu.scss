@@ -1,0 +1,334 @@
+#entete {
+  position: absolute;
+  z-index: 0;
+}
+
+#menu-complet {
+  position: relative;
+  z-index: 1;
+  margin-top: 330px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  border-radius: 40px 40px 0px 0px;
+
+  .titre-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 45px;
+      font-family: "Shrikhand";
+      padding: 20px 60px 20px 60px;
+    }
+
+    .icone-explicatif {
+        width: 10%;
+  
+          i {
+          font-size: 35px;
+          margin-top: 30px;
+          }
+      }
+  }
+}
+
+.choix {
+  animation: fadein 2s;
+  background-color: white;
+  margin: 30px auto 30px auto;
+  width: 90%;
+  border-radius: 30px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .gras {
+    padding: 20px 0px 10px 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  p {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+  }
+
+  .content-choix {
+    width: calc(100% - 180px);
+    transition: width 0.3s ;
+  }
+
+  &:hover {
+    .content-choix {
+      width: 300px;
+    }
+  }
+
+  .complement {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  span {
+      margin-right: 30px;
+      font-size: 25px;
+      padding-top: 70px;
+  }
+  .anim {
+      width: 120px;
+      background-color: #99e2d0;
+      height: 100%;
+      display: flex;
+      i {
+        font-size: 25px;
+        margin: auto;
+        color: #99e2d0;
+        transition: transform 0.3s;
+      }
+      .fa-check-circle:before {
+        content: "\f058";
+        color: white;
+    }
+  }
+  .osef {
+    display: flex;
+    transform: translateX(120px);
+    transition: transform .3s;
+  }
+  &:hover {
+      .osef {
+          transform: translateX(0);
+      }
+      i {
+        transform: rotate(360deg);
+      }
+  }
+}
+
+.partie-menu {
+  width: 124px;
+  margin-left: 40px;
+  h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .hr-entree {
+    width: 60%;
+    border: solid 3px var(--green);
+  }
+  .hr-plats {
+    width: 60%;
+    border: solid 3px var(--green);
+  }
+  .hr-dessert {
+    width: 60%;
+    border: solid 3px var(--green);
+  }
+}
+
+  @media only screen and (min-width: 800px) {
+    #entete {
+      position: absolute;
+      z-index: 0;
+    }
+
+    #menu-complet {
+      position: relative;
+      z-index: 1;
+      margin-top: 330px;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--gray);
+      border-radius: 40px 40px 0px 0px;
+
+      .titre-menu {
+        display: flex;
+        flex-direction: row;
+
+        h1 {
+          font-size: 45px;
+          font-family: "Shrikhand";
+          padding: 20px 60px 20px 60px;
+        }
+      }
+    }
+
+    .choix {
+      animation: fadein 2s;
+      background-color: white;
+      margin: 30px auto 30px auto;
+      width: 90%;
+      border-radius: 30px;
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+          transform: translateY(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      .gras {
+        padding: 20px 0px 10px 20px;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      p {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-size: 25px;
+      }
+      .content-choix {
+        width: calc(100% - 180px);
+      }
+    
+      &:hover {
+        .content-choix {
+          width: auto;
+        }
+      }
+    }
+
+    .partie-menu {
+      margin: auto;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin: auto;
+      }
+      .hr-entree {
+        width: 60%;
+        border: solid 3px var(--green);
+      }
+      .hr-plats {
+        width: 60%;
+        border: solid 3px var(--green);
+      }
+      .hr-dessert {
+        width: 50%;
+        border: solid 3px var(--green);
+      }
+    }
+
+    /*        desktop     */
+    @media only screen and (min-width: 1281px) {
+      #entete {
+        position: absolute;
+        z-index: 0;
+      }
+
+      #menu-complet {
+        position: relative;
+        z-index: 1;
+        margin-top: 750px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--gray);
+        border-radius: 40px 40px 0px 0px;
+
+        .titre-menu {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          h1 {
+            font-size: 45px;
+            font-family: "Shrikhand";
+            padding: 20px 60px 20px 40px;
+          }
+
+          i {
+            font-size: 35px;
+          }
+        }
+        .partie-menu {
+          margin: auto;
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 30px;
+            margin: auto;
+          }
+          .hr-entree {
+            width: 80px;
+            border: solid 3px var(--green);
+          }
+          .hr-plats {
+            width: 80px;
+            border: solid 3px var(--green);
+          }
+          .hr-dessert {
+            width: 80px;
+            border: solid 3px var(--green);
+          }
+        }
+      }
+
+      .choix {
+        animation: fadein 1s;
+        background-color: white;
+        margin: 30px auto 30px auto;
+        border-radius: 30px;
+        width: 90%;
+
+
+        @keyframes fadein {
+          from {
+            opacity: 0;
+            transform: translateY(100px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+
+        .gras {
+          padding: 20px 0px 10px 20px;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        p {
+          padding-bottom: 20px;
+          padding-left: 20px;
+          font-size: 25px;
+        }
+
+        span {
+          margin-left: 5em;
+        }
+        .content-choix {
+          width: calc(100% - 180px);
+        }
+      
+        &:hover {
+          .content-choix {
+            width: auto;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,50 @@
+
+
+.valider {
+    background: linear-gradient(170deg, #9356DC, #FF79DA);
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    margin: 30px 0px;
+    width: 350px;
+    max-width: 100%;
+    align-self: center;
+    transition: 250ms;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(
+          170deg,
+          rgba(255, 121, 218, 0.8) 0%,
+          rgba(214, 108, 219, 0.8) 39%,
+          rgba(171, 94, 220, 0.8) 85%,
+          rgba(155, 89, 220, 0.8) 100%
+        );
+        box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.205);
+      }
+  }
+
+
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+
+    .valider {
+        font-size: 30px;
+        padding: 25px 0px 25px 0px;
+        border-radius: 50px;
+        margin: 25px auto 35px auto;
+        width: 400px;
+        color: white;
+        border: none;
+    }
+
+}
+
+            /*        desktop      */
+            @media only screen and (min-width: 1281px) and (max-width: 1920px){
+    .valider {
+        width: 450px;
+        font-size: 30px;
+        }
+    }
